@@ -3,27 +3,339 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Karan Singde – Dev Journey</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Follow Karan Singde's development journey - an evolving almanac of learning to code, building projects, and growing as a developer." />
+  <title>Karan Singde – Developer Evolution</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
+  <div class="cursor-glow"></div>
+  
   <header>
-    <h1>Welcome to The<br><span class="highlight">Dev Wing</span></h1>
-    <p class="tagline">Built by Karan Singde, learning in public.</p>
+    <div class="logo">KS<span class="highlight">.</span></div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Learning Path</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Dev Blog</a></li>
+        <li><a href="#contact">Connect</a></li>
+      </ul>
+    </nav>
+    <div class="theme-toggle">
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
   </header>
 
   <main>
-    <section class="intro">
-      <h2>Dev Log #0</h2>
-      <p>
-        Hey! I’m Karan. This is the start of my journey to become a skilled developer, build meaningful apps, and live a life of creative freedom. 
-        This site will grow and evolve as I do.
-      </p>
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1 class="glitch-text" data-text="The Dev Wing">The Dev Wing</h1>
+        <div class="tagline-wrapper">
+          <p class="tagline">Building in <span class="typing-text"></span></p>
+        </div>
+        <p class="hero-description">
+          Follow my journey from beginner to professional developer – documenting every step, struggle, and breakthrough.
+        </p>
+        <div class="cta-buttons">
+          <a href="#journey" class="btn primary-btn">Explore Journey</a>
+          <a href="#projects" class="btn secondary-btn">See Projects</a>
+        </div>
+        <div class="tech-stack">
+          <div class="tech-item" data-tech="HTML">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="tech-item learning" data-tech="CSS">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="tech-item future" data-tech="JavaScript">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="tech-item future" data-tech="Python">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="tech-item future" data-tech="C++">
+            <i class="fab fa-cuttlefish"></i><span>++</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-animation">
+          <pre><code>
+function <span class="highlight">developerJourney</span>() {
+  const skills = [];
+  const projects = [];
+  
+  while (true) {
+    const newSkill = <span class="highlight">learn</span>();
+    skills.push(newSkill);
+    
+    const newProject = <span class="highlight">build</span>(skills);
+    projects.push(newProject);
+    
+    <span class="highlight">document</span>(newSkill, newProject);
+    <span class="highlight">share</span>(newSkill, newProject);
+    
+    <span class="highlight">grow</span>();
+  }
+}
+
+developerJourney();
+          </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <h2><span class="highlight">01.</span> About Me</h2>
+      </div>
+      <div class="section-content">
+        <div class="about-image">
+          <div class="image-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>Hey, I'm Karan Singde</h3>
+          <p>
+            I'm on a mission to transform myself into a skilled developer who builds meaningful applications. This site documents my entire journey from day one—showcasing both the struggles and the wins.
+          </p>
+          <p>
+            Rather than presenting a polished collection of completed projects, I'm inviting you to witness my evolution as it happens. Every line of code, every new concept learned, and every problem solved gets documented here.
+          </p>
+          <p>
+            My goal is to create a resource that not only tracks my personal growth but also serves as a learning tool for others on similar paths.
+          </p>
+          <div class="about-timeline">
+            <div class="timeline-item current">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>Getting Started</h4>
+                <p>HTML & CSS Foundations</p>
+                <span class="timeline-date">April 2025</span>
+              </div>
+            </div>
+            <div class="timeline-item future">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>Coming Next</h4>
+                <p>JavaScript Fundamentals</p>
+              </div>
+            </div>
+            <div class="timeline-item future">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>On The Horizon</h4>
+                <p>Python & Beyond</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="journey-section">
+      <div class="section-header">
+        <h2><span class="highlight">02.</span> Learning Journey</h2>
+      </div>
+      <div class="journey-intro">
+        <p>
+          Each module below represents a milestone in my learning path. Click on any subject to explore my notes, exercises, tutorials, and projects related to that technology.
+        </p>
+      </div>
+      <div class="journey-modules">
+        <div class="module-card active">
+          <div class="module-icon">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>Web Foundations</h3>
+          <p>HTML, CSS, Responsive Design</p>
+          <div class="module-progress">
+            <div class="progress-bar" style="width: 65%;">
+              <span>65%</span>
+            </div>
+          </div>
+          <a href="modules/web-foundations.html" class="module-link">Explore Module</a>
+        </div>
+        <div class="module-card upcoming">
+          <div class="module-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Core Concepts, DOM, Async</p>
+          <div class="module-progress">
+            <div class="progress-bar" style="width: 5%;">
+              <span>5%</span>
+            </div>
+          </div>
+          <span class="module-status">Coming Soon</span>
+        </div>
+        <div class="module-card upcoming">
+          <div class="module-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>Syntax, Data Structures, OOP</p>
+          <div class="module-progress">
+            <div class="progress-bar" style="width: 0%;">
+              <span>0%</span>
+            </div>
+          </div>
+          <span class="module-status">Planned</span>
+        </div>
+        <div class="module-card upcoming">
+          <div class="module-icon">
+            <i class="fab fa-cuttlefish"></i><span>++</span>
+          </div>
+          <h3>C++</h3>
+          <p>Core Language, Memory Management</p>
+          <div class="module-progress">
+            <div class="progress-bar" style="width: 0%;">
+              <span>0%</span>
+            </div>
+          </div>
+          <span class="module-status">Planned</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <h2><span class="highlight">03.</span> Project Evolution</h2>
+      </div>
+      <div class="section-content">
+        <p class="projects-intro">
+          Watch my projects evolve from concept to completion. Each project shows version history, documenting my learning process and problem-solving journey.
+        </p>
+        
+        <div class="project-card featured">
+          <div class="project-image">
+            <div class="image-placeholder">
+              <span>This Website</span>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3>The Dev Wing</h3>
+            <p class="project-description">
+              My personal portfolio site that evolves as I learn new skills. This project documents its own creation and evolution.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span class="planned">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/dev-wing/index.html" class="btn project-btn">Explore Evolution</a>
+              <a href="https://github.com/yourusername/dev-wing" class="project-github" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="projects-coming-soon">
+          <h3>More Projects Coming Soon</h3>
+          <p>As I learn more technologies, I'll be building and documenting new projects here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog-section">
+      <div class="section-header">
+        <h2><span class="highlight">04.</span> Dev Log</h2>
+      </div>
+      <div class="blog-entries">
+        <article class="blog-entry">
+          <div class="entry-date">
+            <span class="day">03</span>
+            <span class="month">APR</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="entry-content">
+            <h3>Beginning The Journey</h3>
+            <p>
+              Today marks the start of my development journey. I've set up my learning plan, created this website, and committed to documenting every step along the way.
+            </p>
+            <a href="blog/beginning-the-journey.html" class="read-more">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <h2><span class="highlight">05.</span> Connect</h2>
+      </div>
+      <div class="section-content">
+        <div class="contact-text">
+          <h3>Let's Connect</h3>
+          <p>
+            Whether you're a fellow learner, a potential collaborator, or someone with feedback on my work, I'd love to hear from you.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/yourname" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:your-email@example.com" aria-label="Email me">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Version 0.1 – Born: April 2025</p>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span>KS<span class="highlight">.</span></span>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#journey">Learning Path</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Dev Blog</a>
+        <a href="#contact">Connect</a>
+      </div>
+      <div class="footer-meta">
+        <p>Version 0.1 - Born April 2025</p>
+        <p>Built and documented by Karan Singde</p>
+      </div>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/theme-switcher.js"></script>
 </body>
 </html>

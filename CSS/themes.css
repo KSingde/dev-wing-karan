@@ -1,0 +1,207 @@
+/* Theme variations for The Dev Wing */
+
+/* Base theme variables are defined in style.css */
+/* This file contains additional theme options */
+
+/* Hacker Green Theme */
+.hacker-theme {
+    --bg-color: #0a0a0a;
+    --bg-secondary: #0f0f0f;
+    --text-color: #33ff33;
+    --text-muted: #00cc00;
+    --primary-color: #00ff00;
+    --primary-dark: #008800;
+    --secondary-color: #00bb00;
+    --accent-color: #33ff33;
+    --border-color: #003300;
+    --card-bg: #0a0a0a;
+    --code-bg: #000000;
+    --shadow-glow: 0 0 15px rgba(0, 255, 0, 0.4);
+  }
+  
+  .hacker-theme .logo,
+  .hacker-theme .highlight,
+  .hacker-theme h1,
+  .hacker-theme h2, 
+  .hacker-theme h3 {
+    font-family: 'Courier New', monospace;
+  }
+  
+  .hacker-theme .code-animation::before {
+    background: linear-gradient(45deg, transparent 65%, rgba(0, 255, 0, 0.1) 75%, transparent 85%);
+  }
+  
+  /* Monochrome Focus Theme */
+  .monochrome-theme {
+    --bg-color: #ffffff;
+    --bg-secondary: #f0f0f0;
+    --text-color: #000000;
+    --text-muted: #555555;
+    --primary-color: #000000;
+    --primary-dark: #333333;
+    --secondary-color: #555555;
+    --accent-color: #777777;
+    --border-color: #cccccc;
+    --card-bg: #ffffff;
+    --code-bg: #f0f0f0;
+    --shadow-glow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Retro Terminal Theme */
+  .retro-theme {
+    --bg-color: #2b2b2b;
+    --bg-secondary: #3a3a3a;
+    --text-color: #33de2c;
+    --text-muted: #35b833;
+    --primary-color: #ffcc00;
+    --primary-dark: #cc9900;
+    --secondary-color: #ff9900;
+    --accent-color: #ff6600;
+    --border-color: #4a4a4a;
+    --card-bg: #232323;
+    --code-bg: #111111;
+    --shadow-glow: 0 0 15px rgba(255, 204, 0, 0.3);
+    
+    font-family: 'VT323', 'Courier New', monospace;
+  }
+  
+  .retro-theme .hero-visual::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      transparent 0px,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+  }
+  
+  /* Theme selector styling */
+  .theme-panel-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    transition: background-color var(--transition-fast);
+  }
+  
+  .theme-panel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .theme-panel {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--card-bg);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    box-shadow: var(--shadow-lg);
+    z-index: 100;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+  
+  .theme-panel.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .theme-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s ease;
+  }
+  
+  .theme-option:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .theme-preview {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .default-theme {
+    background-color: #0a0e17;
+  }
+  
+  .default-theme::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00bfff;
+  }
+  
+  .hacker-preview {
+    background-color: #0a0a0a;
+  }
+  
+  .hacker-preview::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00ff00;
+  }
+  
+  .monochrome-preview {
+    background-color: #ffffff;
+  }
+  
+  .monochrome-preview::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+  }
+  
+  .retro-preview {
+    background-color: #2b2b2b;
+  }
+  
+  .retro-preview::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffcc00;
+  }
+  
+  .theme-option span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }

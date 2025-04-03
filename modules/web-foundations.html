@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Web Foundations module - HTML, CSS, and responsive design fundamentals in Karan Singde's development journey." />
+  <title>Web Foundations | Karan Singde</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/module.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  
+  <header>
+    <div class="logo">
+      <a href="../index.html">KS<span class="highlight">.</span></a>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#journey" class="active">Learning Path</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#blog">Dev Blog</a></li>
+        <li><a href="../index.html#contact">Connect</a></li>
+      </ul>
+    </nav>
+    <div class="theme-toggle">
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+  </header>
+
+  <main class="module-container">
+    <div class="module-header">
+      <div class="container">
+        <div class="module-title">
+          <span class="module-icon">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+          </span>
+          <h1>Web Foundations</h1>
+        </div>
+        <div class="module-progress">
+          <div class="progress-bar" style="width: 65%;">
+            <span>65% Complete</span>
+          </div>
+        </div>
+        <div class="module-meta">
+          <div class="date-started">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Started: April 2025</span>
+          </div>
+          <div class="time-invested">
+            <i class="fas fa-clock"></i>
+            <span>Time Invested: 40 hours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-content container">
+      <aside class="module-sidebar">
+        <nav class="module-nav">
+          <h3>Table of Contents</h3>
+          <ul>
+            <li><a href="#overview" class="active">Module Overview</a></li>
+            <li><a href="#html-basics">HTML Fundamentals</a></li>
+            <li><a href="#css-basics">CSS Fundamentals</a></li>
+            <li><a href="#responsive">Responsive Design</a></li>
+            <li><a href="#projects">Mini Projects</a></li>
+            <li><a href="#resources">Learning Resources</a></li>
+            <li><a href="#challenges">Coding Challenges</a></li>
+          </ul>
+        </nav>
+        <div class="learning-path">
+          <h3>Learning Path</h3>
+          <div class="path-item active">
+            <i class="fas fa-check-circle"></i>
+            <span>Web Foundations</span>
+          </div>
+          <div class="path-item next">
+            <i class="fas fa-arrow-circle-right"></i>
+            <span>JavaScript Fundamentals</span>
+          </div>
+          <div class="path-item future">
+            <i class="fas fa-clock"></i>
+            <span>Python Essentials</span>
+          </div>
+          <div class="path-item future">
+            <i class="fas fa-clock"></i>
+            <span>C++ Fundamentals</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="module-main">
+        <section id="overview" class="module-section">
+          <h2>Module Overview</h2>
+          <div class="version-tag">
+            <span>Version 0.2</span>
+            <span>Last Updated: April 10, 2025</span>
+          </div>
+          <p>
+            Welcome to the first stop on my development journey! In this module, I'm documenting everything 
+            I've learned about HTML, CSS, and responsive design principles. This very website is being built 
+            using these skills, and I'm updating this module as I learn and apply new concepts.
+          </p>
+          <p>
+            My goal with this module is to establish a solid foundation in web development while creating a 
+            platform that will grow with me throughout my learning journey. Below, you'll find my notes, 
+            code examples, challenges I've faced, and solutions I've discovered.
+          </p>
+          <div class="key-concepts">
+            <h3>Key Concepts Covered</h3>
+            <ul>
+              <li>HTML document structure and semantic elements</li>
+              <li>CSS selectors, properties, and the box model</li>
+              <li>Flexbox and CSS Grid for layout</li>
+              <li>Responsive design with media queries</li>
+              <li>CSS variables and modern techniques</li>
+              <li>Web accessibility best practices</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="html-basics" class="module-section">
+          <h2>HTML Fundamentals</h2>
+          <p>
+            HTML (HyperText Markup Language) is the backbone of every web page. It provides the structure and 
+            semantics for content. Here are the key concepts I've learned about HTML:
+          </p>
+          
+          <div class="concept-card">
+            <h3>Document Structure</h3>
+            <p>
+              Every HTML document follows a standard structure that includes doctype declaration, html, head, and body elements.
+            </p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </div>
+          
+          <div class="concept-card">
+            <h3>Semantic HTML</h3>
+            <p>
+              Semantic elements provide meaning to the content structure, improving accessibility, SEO, and code readability.
+            </p>
+            <div class="comparison-table">
+              <div>
+                <h4>Non-Semantic Elements</h4>
+                <ul>
+                  <li><code>&lt;div&gt;</code> - Generic container</li>
+                  <li><code>&lt;span&gt;</code> - Generic inline container</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Semantic Elements</h4>
+                <ul>
+                  <li><code>&lt;header&gt;</code> - Page or section header</li>
+                  <li><code>&lt;nav&gt;</code> - Navigation links</li>
+                  <li><code>&lt;main&gt;</code> - Main content area</li>
+                  <li><code>&lt;section&gt;</code> - Standalone section</li>
+                  <li><code>&lt;article&gt;</code> - Independent content</li>
+                  <li><code>&lt;aside&gt;</code> - Related but separate content</li>
+                  <li><code>&lt;footer&gt;</code> - Page or section footer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="learning-insight">
+            <h4>Learning Insight:</h4>
+            <p>
+              When I first started building this website, I relied heavily on <code>&lt;div&gt;</code> elements.
+              After learning about semantic HTML, I refactored my code to use appropriate semantic elements.
+              This not only made my code more readable but also improved accessibility for users with screen readers.
+            </p>
+          </div>
+          
+          <!-- More HTML content sections would go here -->
+        </section>
+
+        <section id="css-basics" class="module-section">
+          <h2>CSS Fundamentals</h2>
+          <p>
+            CSS (Cascading Style Sheets) controls the presentation and layout of HTML elements. Here's what I've learned:
+          </p>
+          
+          <div class="concept-card">
+            <h3>Selectors & Specificity</h3>
+            <p>
+              CSS selectors target HTML elements for styling. Specificity determines which styles are applied when multiple rules target the same element.
+            </p>
+            <pre><code class="language-css">/* Element selector */
+p {
+  color: #333;
+}
+
+/* Class selector */
+.highlight {
+  color: #00bfff;
+}
+
+/* ID selector */
+#hero {
+  background-color: #f0f4f8;
+}
+
+/* Attribute selector */
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+/* Pseudo-class */
+a:hover {
+  color: #0077b6;
+}</code></pre>
+          </div>
+          
+          <div class="concept-card">
+            <h3>Box Model</h3>
+            <p>
+              The CSS box model is fundamental to layout. Every element is a rectangular box with content, padding, border, and margin areas.
+            </p>
+            <div class="box-model-diagram">
+              <div class="margin">
+                margin
+                <div class="border">
+                  border
+                  <div class="padding">
+                    padding
+                    <div class="content">content</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-css">.box {
+  /* Content dimensions */
+  width: 300px;
+  height: 200px;
+  
+  /* Padding (inner space) */
+  padding: 20px;
+  
+  /* Border */
+  border: 2px solid #333;
+  
+  /* Margin (outer space) */
+  margin: 30px;
+  
+  /* Modern box sizing */
+  box-sizing: border-box;
+}</code></pre>
+          </div>
+          
+          <div class="learning-insight">
+            <h4>Learning Insight:</h4>
+            <p>
+              The <code>box-sizing: border-box;</code> property was a game-changer for me. By default, 
+              CSS uses <code>content-box</code>, which means padding and border are added to the specified width/height.
+              Setting <code>box-sizing: border-box;</code> makes padding and border included in the element's dimensions,
+              making layout calculations much more intuitive.
+            </p>
+          </div>
+          
+          <!-- More CSS content sections would go here -->
+        </section>
+
+        <section id="responsive" class="module-section">
+          <h2>Responsive Design</h2>
+          <p>
+            Responsive design ensures websites look good on all devices. Here are the key techniques I've learned:
+          </p>
+          
+          <div class="concept-card">
+            <h3>Media Queries</h3>
+            <p>
+              Media queries allow applying different styles based on device characteristics like screen width.
+            </p>
+            <pre><code class="language-css">/* Base styles for all devices */
+.container {
+  padding: 20px;
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Styles for mobile phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}</code></pre>
+          </div>
+          
+          <div class="concept-card">
+            <h3>Flexbox Layout</h3>
+            <p>
+              Flexbox is a one-dimensional layout method for arranging items in rows or columns.
+            </p>
+            <pre><code class="language-css">.flex-container {
+  display: flex;
+  flex-direction: row; /* or column */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 1; /* Grow and shrink equally */
+}</code></pre>
+          </div>
+          
+          <div class="learning-insight">
+            <h4>Learning Insight:</h4>
+            <p>
+              When building this website, I found that using a mobile-first approach made responsive design much simpler. 
+              I started with styles for mobile devices and then added media queries for larger screens. 
+              This approach resulted in cleaner code and better performance on mobile devices.
+            </p>
+          </div>
+          
+          <!-- More responsive design content would go here -->
+        </section>
+
+        <section id="projects" class="module-section">
+          <h2>Mini Projects</h2>
+          <p>
+            Throughout learning these fundamentals, I've completed several mini-projects to practice my skills:
+          </p>
+          
+          <div class="project-showcase">
+            <div class="project-card">
+              <h3>Personal Website v0.1</h3>
+              <p>My very first attempt at creating a personal website using HTML and basic CSS.</p>
+              <div class="project-preview">
+                <img src="../images/projects/website-v01.png" alt="Screenshot of website version 0.1">
+              </div>
+              <div class="project-links">
+                <a href="../projects/website-v01/index.html" class="btn project-btn">View Demo</a>
+                <a href="https://github.com/yourusername/dev-wing/tree/v0.1" class="project-github" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <h3>Responsive Profile Card</h3>
+              <p>A simple profile card component that adapts to different screen sizes.</p>
+              <div class="project-preview">
+                <img src="../images/projects/profile-card.png" alt="Screenshot of profile card project">
+              </div>
+              <div class="project-links">
+                <a href="../projects/profile-card/index.html" class="btn project-btn">View Demo</a>
+                <a href="https://github.com/yourusername/dev-wing/tree/profile-card" class="project-github" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="resources" class="module-section">
+          <h2>Learning Resources</h2>
+          <p>
+            Here are the resources I found most helpful while learning HTML, CSS, and responsive design:
+          </p>
+          
+          <div class="resources-list">
+            <div class="resource-item">
+              <div class="resource-icon"><i class="fas fa-book"></i></div>
+              <div class="resource-content">
+                <h3>MDN Web Docs</h3>
+                <p>Comprehensive documentation for web technologies including HTML, CSS, and JavaScript.</p>
+                <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">Visit Resource</a>
+              </div>
+            </div>
+            
+            <div class="resource-item">
+              <div class="resource-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="resource-content">
+                <h3>CSS-Tricks</h3>
+                <p>Excellent tutorials and references, especially for Flexbox and CSS Grid.</p>
+                <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">Visit Resource</a>
+              </div>
+            </div>
+            
+            <div class="resource-item">
+              <div class="resource-icon"><i class="fas fa-code"></i></div>
+              <div class="resource-content">
+                <h3>freeCodeCamp</h3>
+                <p>Free interactive coding challenges and projects for HTML and CSS fundamentals.</p>
+                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Visit Resource</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="challenges" class="module-section">
+          <h2>Coding Challenges</h2>
+          <p>
+            Test your understanding of HTML and CSS with these challenges. I've solved them as part of my learning journey, 
+            and you can try them too!
+          </p>
+          
+          <div class="challenge-card">
+            <h3>Challenge #1: Build a Navbar</h3>
+            <div class="challenge-description">
+              <p>Create a responsive navigation bar that collapses into a hamburger menu on mobile devices.</p>
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Navigation links should be horizontally aligned on desktop</li>
+                <li>On mobile (below 768px), links should be hidden and replaced with a hamburger icon</li>
+                <li>Clicking the hamburger should show/hide the navigation links</li>
+                <li>Use semantic HTML elements</li>
+              </ul>
+            </div>
+            <div class="challenge-solution">
+              <button class="toggle-solution">Show My Solution</button>
+              <div class="solution-content" style="display: none;">
+                <h4>HTML:</h4>
+                <pre><code class="language-html">&lt;nav class="navbar"&gt;
+  &lt;div class="logo"&gt;Brand&lt;/div&gt;
+  &lt;div class="menu-toggle"&gt;
+    &lt;div class="hamburger"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class="nav-links"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                <h4>CSS:</h4>
+                <pre><code class="language-css">.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  bottom: -10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+}</code></pre>
+                <h4>JavaScript:</h4>
+                <pre><code class="language-javascript">document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('active');
+});</code></pre>
+              </div>
+            </div>
+          </div>
+          
+          <div class="challenge-card">
+            <h3>Challenge #2: Create a Responsive Grid Layout</h3>
+            <div class="challenge-description">
+              <p>Build a responsive grid of cards that adjusts the number of columns based on screen size.</p>
+              <h4>Requirements:</h4>
+              <ul>
+                <li>4 columns on large screens (1200px+)</li>
+                <li>3 columns on desktop (992px+)</li>
+                <li>2 columns on tablets (768px+)</li>
+                <li>1 column on mobile devices</li>
+                <li>Each card should have consistent spacing</li>
+              </ul>
+            </div>
+            <div class="challenge-solution">
+              <button class="toggle-solution">Show My Solution</button>
+              <div class="solution-content" style="display: none;">
+                <h4>HTML:</h4>
+                <pre><code class="language-html">&lt;div class="card-grid"&gt;
+  &lt;div class="card"&gt;Card 1&lt;/div&gt;
+  &lt;div class="card"&gt;Card 2&lt;/div&gt;
+  &lt;div class="card"&gt;Card 3&lt;/div&gt;
+  &lt;div class="card"&gt;Card 4&lt;/div&gt;
+  &lt;div class="card"&gt;Card 5&lt;/div&gt;
+  &lt;div class="card"&gt;Card 6&lt;/div&gt;
+  &lt;div class="card"&gt;Card 7&lt;/div&gt;
+  &lt;div class="card"&gt;Card 8&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <h4>CSS:</h4>
+                <pre><code class="language-css">.card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span>KS<span class="highlight">.</span></span>
+      </div>
+      <div class="footer-nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#journey">Learning Path</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#blog">Dev Blog</a>
+        <a href="../index.html#contact">Connect</a>
+      </div>
+      <div class="footer-meta">
+        <p>Version 0.1 - Born April 2025</p>
+        <p>Built and documented by Karan Singde</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-javascript.min.js"></script>
+  <script>
+    // Toggle solution visibility
+    document.querySelectorAll('.toggle-solution').forEach(button => {
+      button.addEventListener('click', function() {
+        const solution = this.nextElementSibling;
+        const isVisible = solution.style.display !== 'none';
+        
+        solution.style.display = isVisible ? 'none' : 'block';
+        this.textContent = isVisible ? 'Show My Solution' : 'Hide Solution';
+      });
+    });
+    
+    // Highlight active TOC item based on scroll position
+    const sections = document.querySelectorAll('.module-section');
+    const navItems = document.querySelectorAll('.module-nav a');
+    
+    function highlightNavOnScroll() {
+      let scrollPosition = window.scrollY;
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionBottom = sectionTop + section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          navItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('href') === `#${sectionId}`) {
+              item.classList.add('active');
+            }
+          });
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', highlightNavOnScroll);
+    highlightNavOnScroll(); // Run once on load
+  </script>
+</body>
+</html>
