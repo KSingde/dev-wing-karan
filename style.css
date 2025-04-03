@@ -59,6 +59,12 @@ footer {
   color: #888;
 }
 
+.highlight {
+    color: #00bfff;
+    font-weight: 700;
+    display: block;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 1rem;
